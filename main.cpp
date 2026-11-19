@@ -169,7 +169,7 @@ void handleTask2() {
 
     SVGDocumentBuilder builder;
     builder.setCanvas(canvasW, canvasH)
-           .setViewBox(-canvasW / 2.0, -canvasH / 2.0, canvasW, canvasH)
+           .setViewBox(0.0, 0.0, canvasW, canvasH)
            .addElement(std::move(rootGroup));
 
     SVGDocument doc = builder.build();
